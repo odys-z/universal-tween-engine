@@ -4,11 +4,12 @@
 
 Fixed a bug in gradle task scripts on Ubuntu.
 
-gradle task failed. But this command OK:
+Orignal gradle's installing task failed on Ubuntu. But this command OK:
 
 ```
     mvn install:install-file -Dfile=java/build/api/tween-engine-api.jar -DgroupId=com.aurelienribon -DartifactId=tween-engine-api -Dversion=6.3.3 -Dpackaging=jar
 ```
+
 See build.gradle.
 
 ## Check out the demo!
