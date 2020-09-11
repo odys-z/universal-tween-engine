@@ -1,5 +1,16 @@
 ![](http://www.aurelienribon.com/blog/wp-content/uploads/2012/05/tween-engine-big-logo.jpg)
 
+## About the fork
+
+Fixed a bug in gradle task scripts on Ubuntu.
+
+gradle task failed. But this command OK:
+
+```
+    mvn install:install-file -Dfile=java/build/api/tween-engine-api.jar -DgroupId=com.aurelienribon -DartifactId=tween-engine-api -Dversion=6.3.3 -Dpackaging=jar
+```
+See build.gradle.
+
 ## Check out the demo!
 
   * [Android application](https://play.google.com/store/apps/details?id=aurelienribon.tweenengine.demo)
@@ -13,9 +24,9 @@ The Universal Tween Engine enables the interpolation of every attribute from any
 In one line, send your objects to another position (here x=20 and y=30), with a smooth elastic transition, during 1 second).
 
 ```java
-// Arguments are (1) the target, (2) the type of interpolation, 
+// Arguments are (1) the target, (2) the type of interpolation,
 // and (3) the duration in seconds. Additional methods specify  
-// the target values, and the easing function. 
+// the target values, and the easing function.
 
 Tween.to(mySprite, Type.POSITION_XY, 1.0f).target(20, 30).ease(Elastic.INOUT);
 
